@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "python"
+name = "Python-Hackerrank"
 version = "0.1.0"
 description = ""
 authors = ["Alejandro Sánchez Yalí <asanchezyali@gmail.com>"]
