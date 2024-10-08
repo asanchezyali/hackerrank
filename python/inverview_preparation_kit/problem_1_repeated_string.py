@@ -1,10 +1,14 @@
 import time
 
-def repeatedString(pattern_string, total_length):
-    a_count_in_pattern = pattern_string.count("a")
-    num_full_repeats, remaining_length = divmod(total_length, len(pattern_string))
-    total_a_in_length = num_full_repeats * a_count_in_pattern + pattern_string[:remaining_length].count("a")
-    return total_a_in_length
+
+def repeatedString(string, length):
+    a_count_in_pattern = string.count("a")
+    num_full_repeats, remaining_length = divmod(length, len(string))
+    total_repeats = num_full_repeats * a_count_in_pattern + string[
+        :remaining_length
+    ].count("a")
+    return total_repeats
+
 
 if __name__ == "__main__":
     pattern_string = "a"
