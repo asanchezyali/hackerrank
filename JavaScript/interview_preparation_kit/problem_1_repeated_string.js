@@ -1,7 +1,7 @@
-function repeatedString(string, length) {
-  const aCountInPattern = string.split("a").length - 1;
-  const [numFullRepeats, remainingLength] = [Math.floor(length / string.length), length % string.length];
-  const totalRepeats = numFullRepeats * aCountInPattern + (string.slice(0, remainingLength).split("a").length - 1);
+function repeatedString(s, n) {
+  const aCountInPattern = s.split("a").length - 1;
+  const [numFullRepeats, remainingLength] = [Math.floor(n / s.length), n % s.length];
+  const totalRepeats = numFullRepeats * aCountInPattern + (s.slice(0, remainingLength).split("a").length - 1);
   return totalRepeats;
 }
 
