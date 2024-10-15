@@ -12,9 +12,9 @@ fn repeat_string(s: &str, n: i64) -> i64 {
 }
 
 fn main() {
-    let start = Instant::now();
     let s = "aba";
     let n = 10;
+    let start = Instant::now();
     let result = repeat_string(s, n);
     println!("Result: {}", result);
     println!("Elapsed time: {:?}", start.elapsed());
