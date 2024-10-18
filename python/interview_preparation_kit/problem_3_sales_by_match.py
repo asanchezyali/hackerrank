@@ -32,6 +32,7 @@ if __name__ == "__main__":
     ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
     result = sockMerchant(n, ar)
     elapsed_time = time.time() - start_time
+    print(result)
     print(f"--- {elapsed_time:.4f} seconds ---")
 
 
