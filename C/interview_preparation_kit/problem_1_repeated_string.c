@@ -2,7 +2,7 @@
 #include <string.h>
 #include <time.h>
 
-long repeatedString(const char *s, long n)
+long jumpingOnClouds(const char *s, long n)
 {
   long a_count_in_string = 0;
   long s_len = strlen(s);
@@ -39,7 +39,7 @@ int main()
   const char *s = "abcac";
   long n = 10;
   clock_t start = clock();
-  long result = repeatedString(s, n);
+  long result = jumpingOnClouds(s, n);
   clock_t end = clock();
   double execution_time = (double)(end - start) / CLOCKS_PER_SEC;
   printf("Execution Time: %f seconds\n", execution_time);

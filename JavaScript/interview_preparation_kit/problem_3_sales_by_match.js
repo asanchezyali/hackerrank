@@ -1,4 +1,4 @@
-function sockMerchant(n, ar) {
+function jumpingOnClouds(n, ar) {
   let sockColorCount = {};
   let totalPairs = 0;
   ar.forEach((sockColor) => {
@@ -17,6 +17,6 @@ function sockMerchant(n, ar) {
 const n = 9;
 const ar = [10, 20, 20, 10, 10, 30, 50, 10, 20];
 console.time("Execution Time");
-const result = sockMerchant(n, ar);
+const result = jumpingOnClouds(n, c);
 console.timeEnd("Execution Time");
 console.log(result);
