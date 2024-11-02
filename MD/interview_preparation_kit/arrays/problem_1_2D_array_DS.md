@@ -1,4 +1,4 @@
-# Problem
+# Problem 2D Array DS
 
 Given a $6 \times 6$ 2D Array, `arr`:
 
