@@ -1,4 +1,4 @@
-function minimumBribes(q) {
+function minimumSwaps(q) {
   let bribes = 0;
   let chaotic = false;
   for (let i = 0; i < q.length; i++) {
@@ -17,7 +17,7 @@ function minimumBribes(q) {
 
 const q = [2, 1, 5, 3, 4];
 console.time("Execution Time");
-const result = minimumBribes(q);
+const result = minimumSwaps(q);
 console.timeEnd("Execution Time");
 
 console.log(result);
