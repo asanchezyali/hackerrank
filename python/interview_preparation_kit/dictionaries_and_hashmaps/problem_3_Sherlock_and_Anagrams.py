@@ -1,3 +1,5 @@
+#Problem: Sherlock and Anagrams
+#Link: https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
 import time
 
 
