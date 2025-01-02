@@ -1,7 +1,6 @@
 # Problem: Fraudulent Activity Notifications
 # Link: https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem
 import time
-from functools import cmp_to_key
 
 
 def activityNotifications(expenditure, d):
