@@ -42,8 +42,6 @@ def countInversions(arr):
 
 if __name__ == "__main__":
     start_time = time.time()
-    n = 9
-    d = 5
     arr = [2, 1, 3, 1, 2]
     result = countInversions(arr)
     print(result)
