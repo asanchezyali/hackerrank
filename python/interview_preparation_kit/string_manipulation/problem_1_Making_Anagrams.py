@@ -1,4 +1,4 @@
-# Problem: Merge Sort: Counting Inversions
+# Problem: String Manipulation - Making Anagrams
 # Link: https://www.hackerrank.com/challenges/ctci-making-anagrams/problem
 import time
 
