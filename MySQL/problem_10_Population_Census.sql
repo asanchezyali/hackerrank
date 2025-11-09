@@ -1,0 +1,7 @@
+# Asiatic Population
+# url: https://www.hackerrank.com/challenges/asian-population/
+
+SELECT SUM(CITY.POPULATION) AS ASIAN_POPULATION
+FROM CITY
+INNER JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
+WHERE COUNTRY.CONTINENT = 'Asia';
