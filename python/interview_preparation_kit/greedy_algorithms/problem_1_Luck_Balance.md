@@ -93,21 +93,6 @@ def luckBalance(k, contests):
 
 When `k` is small, sorting the entire list is wasteful. We only need the **top k** values.
 
-```mermaid
-flowchart TD
-    A{"Is contest important?"} -->|No| B["Add luck to total"]
-    A -->|Yes| C{"heap size < k?"}
-    C -->|Yes| D["Push luck to heap"]
-    C -->|No| E{"luck > heap minimum?"}
-    E -->|Yes| F["Replace heap minimum"]
-    E -->|No| G["Skip - will be won"]
-
-    D --> H["Continue to next contest"]
-    F --> H
-    G --> H
-    B --> H
-```
-
 ### Optimized Solution
 
 ```python
