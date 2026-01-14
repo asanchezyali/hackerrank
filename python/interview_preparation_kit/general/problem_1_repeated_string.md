@@ -168,56 +168,6 @@ def repeatedString(s, n):
     return full_repeats * a_count + s[:remainder].count("a")
 ```
 
----
-
-## Alternative: Single Pass Solution
-
-The original solution calls `.count()` twice. We can do it in a single pass:
-
-```python
-def repeatedString_single_pass(s, n):
-    if not s:
-        return 0
-
-    full_repeats, remainder = divmod(n, len(s))
-
-    total_a = 0
-    remainder_a = 0
-
-    for i, char in enumerate(s):
-        if char == 'a':
-            total_a += 1
-            if i < remainder:
-                remainder_a += 1
-
-    return full_repeats * total_a + remainder_a
-```
-
-### Comparison
-
-| Solution | Passes | Time | Practical Speed |
-|----------|--------|------|-----------------|
-| Original | 2 | O(len(s)) | Faster (C-optimized `.count()`) |
-| Single Pass | 1 | O(len(s)) | Slower (Python loop overhead) |
-
-**Verdict:** The original is actually faster in practice because `.count()` is implemented in C, while a Python `for` loop has more overhead. Stick with the original.
-
----
-
-## Alternative: Using sum() with Generator
-
-A more Pythonic one-liner (but not necessarily faster):
-
-```python
-def repeatedString_pythonic(s, n):
-    if not s:
-        return 0
-
-    full, rem = divmod(n, len(s))
-    return full * s.count("a") + sum(1 for c in s[:rem] if c == 'a')
-```
-
----
 
 ## Common Mistakes
 
